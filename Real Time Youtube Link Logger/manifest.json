@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "YouTube Music Logger",
+    "version": "1.0",
+    "description": "Logs YouTube music video URLs to a server.",
+    "permissions": [
+      "webNavigation",
+      "tabs",
+      "storage",
+      "http://localhost:8765/"
+    ],
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "48": "icon.png"
+      }
+    }
+  }
+  
